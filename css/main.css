@@ -19,8 +19,12 @@ button {
   background-color: transparent;
 }
 
-button, a {
+a {
   cursor: pointer;
+}
+
+button {
+  cursor: pointer !important;
 }
 
 a, p, h1, h2, h3, h4, h5 {
@@ -874,6 +878,7 @@ script {
 .reviews__item:hover {
   background-color: #FAF9F4;
   border: 1px solid rgba(50, 50, 49, 0.0784313725);
+  cursor: pointer;
 }
 .reviews__item-suptext {
   position: absolute;
@@ -940,12 +945,9 @@ script {
   transition-timing-function: linear !important;
 }
 .photos__swiper-slide {
-  width: 142px;
+  width: auto;
   height: 212px;
   border-radius: 24px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.photos__swiper-slide:nth-child(3n+1) {
-  width: 191px;
 }/*# sourceMappingURL=main.css.map */
