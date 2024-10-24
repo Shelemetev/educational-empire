@@ -918,6 +918,7 @@ script {
 }
 .reviews__slide-text {
   font-size: 14px;
+  margin-top: 16px;
 }
 .reviews__slide-data {
   position: absolute;
