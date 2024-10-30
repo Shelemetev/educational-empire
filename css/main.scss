@@ -56,15 +56,15 @@ script {
         transform: translate(-50%,-50%);
         z-index: 1;
         background-repeat: no-repeat;
-        background-position:top right;
+        background-position:center right;
     }
     position: relative;
     background-color: #FAF8F4;
-    padding: 80px 0;
+    padding: 157px 0 80px;
     &__inner {
         display: flex;
-        align-items: flex-start;
-        gap: 40px;
+        align-items: flex-start;  
+        justify-content: space-between;
         position: relative;
         z-index: 2;
     }
@@ -74,7 +74,7 @@ script {
             font-size: 48px;
             font-weight: 400;
             position: relative;
-            font-weight: 500;
+            font-weight: 600;
             &::before {
                 content: '';
                 width: 224px;
@@ -90,6 +90,7 @@ script {
             margin-top: 16px;
             font-size: 18px;
             font-weight: 400px;
+            width: 474px;
         }
         &-btns {
             display: flex;
@@ -150,7 +151,7 @@ script {
     &__content {
         &-title {
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
             position: relative;
             z-index: 2;
             &--wrapper {
@@ -166,6 +167,7 @@ script {
         &-text  {
             margin-top: 16px;
             font-size: 16px;
+            width: 469px;
         }
         &-blocks {
             margin-top: 28px;
@@ -174,7 +176,7 @@ script {
         }
         &-suptitle {
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-suptext {
             font-size: 14px;
@@ -228,8 +230,10 @@ script {
     &__title {
         font-size: 36px;
         text-align: center;
-        font-weight: 500;
+        font-weight: 600;
         position: relative;
+        width: max-content;
+        margin: 0 auto;
         &::after {
             content: " ";
             width: 113px;
@@ -238,7 +242,7 @@ script {
             background-image: url(../img/title-arrow.svg);
             background-position: center center;
             top: -18px;
-            right: 242px;
+            right: -121px;
             background-repeat: no-repeat;
         }
     }
@@ -336,7 +340,7 @@ script {
     &__content {
         &-title {
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-text {
             font-size: 18px;
@@ -418,7 +422,7 @@ script {
     }
     &__title {
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
         position: relative;
         &::after {
@@ -446,11 +450,12 @@ script {
         &-title {
             margin-top: 16px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-text {
             width: 341px;
             font-size: 14px;
+            margin-top: 16px;
         }
         &-img--wrapper{
             padding: 8px;
@@ -504,7 +509,7 @@ script {
     padding: 80px 0;
     &__title {
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
     }
     &__items {
@@ -519,7 +524,7 @@ script {
         position: relative;
         &-title {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             margin-top: 24px;
             text-align: center;
         }
@@ -642,7 +647,7 @@ script {
     }
     &__title {
         text-align: center;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 36px;
         position: relative;
         z-index: 3;
@@ -672,7 +677,7 @@ script {
         padding: 24px;
         &-title {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 600;
             text-align: center;
         }
         &-text {
@@ -684,7 +689,7 @@ script {
             margin-top: 8px;
             text-align: center;
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-time {
             text-align: center;
@@ -727,7 +732,7 @@ script {
     &__content {
         &-title {
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-box {
             margin-top: 40px;
@@ -748,7 +753,7 @@ script {
         }
         &-suptitle {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 16px;
         }
     }
@@ -760,7 +765,7 @@ script {
         height: 100%;
         &-title {
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-text {
             font-size: 16px;
@@ -854,7 +859,7 @@ script {
     }
     &__title {
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 600;
     }
     &__top {
         display: flex;
@@ -915,7 +920,7 @@ script {
         }
         &-title {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
         }
         &-box-img {
             margin-top: 4px;
@@ -941,6 +946,13 @@ script {
 .photos {
     padding-bottom: 40px;
     overflow: hidden;
+    pointer-events: none;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     &__swiper {
         &-wrapper {
             -webkit-transition-timing-function:linear!important; 
