@@ -337,9 +337,23 @@ script {
 .languages__content-title {
   font-size: 36px;
   font-weight: 600;
+  position: relative;
+}
+.languages__content-title::after {
+  content: " ";
+  position: absolute;
+  width: 249px;
+  height: 15px;
+  left: 166px;
+  bottom: -12px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../img/languages-undeline.svg);
+  background-size: cover;
 }
 .languages__content-text {
   font-size: 18px;
+  margin-top: 8px;
 }
 .languages__content-items {
   display: flex;
