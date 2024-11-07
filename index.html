@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./vendor/swiper/swiper.css">
     <script src="./vendor/swiper/swiper.js"></script>
 
+    <!-- ICONMOON -->
+    <link rel="stylesheet" href="./icomoon/style.css">
+
     <!-- СТИЛИ -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media/main.media.css">
@@ -49,7 +52,7 @@
                     <h1 class="main__content-title">Репетиторы по всем школьным предметам</h1>
                     <p class="main__content-text">Современный центр дополнительного образования с широкими возможностями.</p>
                     <div class="main__content-btns">
-                        <button class="main__content-btn main__content-btn--orange">Записаться</button>
+                        <button class="main__content-btn main__content-btn--orange" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                         <button class="main__content-btn main__content-btn--grey">Смотреть отзывы</button>
                     </div>
                     <p class="main__content-suptext">1 000 ₽ в подарок за первое занятие</p>
@@ -86,7 +89,7 @@
                         </div>
                     </div>
                     <div class="about__content-bottom">
-                        <button class="about__content-btn">Записаться</button>
+                        <button class="about__content-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                         <a href="" target="_blank" class="about__content-link about__content-link--whtp">
                             <img src="./img/wa-green.svg" alt="">
                         </a>
@@ -212,7 +215,7 @@
                         </div>
                     </div>
                     <div class="languages__content-bottom">
-                        <button class="languages__content-btn">Записаться</button>
+                        <button class="languages__content-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                         <a href="" target="_blank" class="languages__content-link">
                             <img src="./img/wa-green.svg" alt="">
                         </a>
@@ -274,7 +277,7 @@
                     </div>
                 </div>
                 <div class="courses__bottom">
-                    <button class="courses__btn main-btn">Записаться</button>
+                    <button class="courses__btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                     <a href=" " target="_blank" class="courses__link wthp-link">
                         <img src="./img/wa-green.svg" alt="" srcset="">
                     </a>
@@ -314,7 +317,7 @@
                     </div>
                 </div>
                 <div class="stocks__bottom">
-                    <button class="stocks__btn main-btn">Записаться</button>
+                    <button class="stocks__btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                     <a href="" target="_blank" class="stocks__link wthp-link">
                         <img src="./img/wa-green.svg" alt="">
                     </a>
@@ -519,7 +522,7 @@
                     </div>
                 </div>
                 <div class="count__bottom">
-                    <button class="count__btn main-btn">Записаться</button>
+                    <button class="count__btn main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Записаться</button>
                     <a href="" target="_blank" class="count__link wthp-link">
                         <img src="./img/wa-green.svg" alt="">
                     </a>
@@ -594,6 +597,45 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <form action="" class="modal__form">
+                <button type="button" data-bs-dismiss="modal" class="modal__form-btn--close"></button>
+                <h3 class="modal__form-title">Оставь заявку</h3>
+                <p class="modal__form-text">1000 ₽ в подарок на первое занятие</p>
+                <div class="modal__form-input-box">
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control modal__form-input" id="floatingInput" placeholder="name@example.com">
+                        <label class="modal__form-input--text" for="floatingInput">Имя <p class="text-grey">(обязательно)</p></label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control modal__form-input" id="floatingPassword" placeholder="Password">
+                        <label class="modal__form-input--text" for="floatingPassword">Телефон <p class="text-grey">(обязательно)</p></label>
+                    </div>
+                </div>
+                <div class="modal__form-input-box">
+                    <div class="form-floating">
+                        <input type="object" class="form-control modal__form-input" id="floatingPassword" placeholder="Password">
+                        <label class="modal__form-input--text" for="floatingPassword">Укажите предмет <p class="text-grey">(необязательно)</p></label>
+                    </div>
+                </div>
+                <button class="modal__form-btn main-btn">Записаться</button>
+                <p class="modal__form-suptext">Нажимая на кнопку “Записаться”, Вы даете согласие на обработку <a class="blue-text" href="">персональных данных.</a></p>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <button class="slider__btn slider__btn--close"></button>
+        <div class="slider__content">
+
+        </div>
+        <button class="slider__btn slider__btn--prev"></button>
+        <button class="slider__btn slider__btn--next"></button>
+    </div>
 </body>
 
 <footer class="footer m-0 border-0">
@@ -628,5 +670,6 @@
 <script src="./js/reviews-swiper.js"></script>
 <script src="./js/photos-swiper.js"></script>
 
+<script src="./js/slider.js"></script>
 <script src="./js/header.js"></script>
 </html>
